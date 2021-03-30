@@ -2,17 +2,17 @@ apiVersion: app.ibm.com/v1alpha1
 kind: Deployable
 metadata:
   annotations:
-    app.ibm.com/is-local-deployable: "false"
-  name: labX-tradr-service
+    app.ibm.com/is-local-deployable: "true"
+  name: lab1-tradr-service
 spec:
   template:
     apiVersion: v1
     kind: Service
     metadata:
-      name: labX-tradr-service
+      name: lab1-tradr-service
     spec:
       selector:
-        app: labX-tradr
+        app: lab1-tradr
       ports:
         - protocol: TCP
           port: 80
