@@ -1,8 +1,8 @@
-apiVersion: app.ibm.com/v1alpha1
+apiVersion: apps.open-cluster-management.io/v1
 kind: Deployable
 metadata:
   annotations:
-    app.ibm.com/is-local-deployable: "false"
+    apps.open-cluster-management.io/is-local-deployable: "true"
   name: lab1-tradr-deploy
 spec:
   template:
